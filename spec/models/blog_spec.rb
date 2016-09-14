@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Blog, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "must have a title" do
+    blog = Blog.new.tap { |b| b.valid? }
+    expect(blog.errors[:title].size).to eq(1)
+  end
+
+  it "must have a body" do
+    blog = Blog.new.tap { |b| b.valid? }
+    expect(blog.errors[:body].size).to eq(1)
+  end
 end
