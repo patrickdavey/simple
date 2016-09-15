@@ -1,0 +1,15 @@
+one two three four five six seven eight nine ten forty-two.
+
+A paragraph is something which has a linebreak above
+and below it. So everything inside here is one
+paragraph.
+
+[ Vim also knows about many { "types of (surrounds)" }, even <tags>which is nice</tags> ]
+
+
+and
+really
+a
+whole
+lot
+more
