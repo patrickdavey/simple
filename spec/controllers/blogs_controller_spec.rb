@@ -52,13 +52,6 @@ RSpec.describe BlogsController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new blog as @blog" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:blog)).to be_a_new(Blog)
-    end
-  end
-
   describe "GET #edit" do
     it "assigns the requested blog as @blog" do
       blog = Blog.create! valid_attributes
